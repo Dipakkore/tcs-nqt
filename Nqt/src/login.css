@@ -1,0 +1,118 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  overflow-x: hidden; /* ✅ no overflow */
+}
+
+/* HEADER */
+.header {
+  background: #0033a0;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* CENTER AREA */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.card {
+  width: 100%;
+  max-width: 380px;   /* laptop width */
+  padding: 32px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  color: #0033a0;
+}
+
+/* INPUTS */
+.card input {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* PASSWORD SHOW */
+.passwordBox {
+  position: relative;
+}
+
+.passwordBox span {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #0033a0;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+/* BUTTON */
+button {
+  padding: 12px;
+  background: #0033a0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00257a;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  background: #eaeaea;
+}
+
+/* 📱 MOBILE FULL WIDTH */
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 24px;
+  }
+}
